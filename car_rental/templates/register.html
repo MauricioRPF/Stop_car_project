@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
+
+
+</head>
+<body>
+    
+    <div class="headerimage"></div>
+
+    <div id="menuindex">
+        <a id="login" href="Login">Login</a>
+
+        <a id="login" href="{{ url_for('register') }}">Register</a>
+    </div>
+    
+    <div class="dropdown-index">
+        <button class="dropbtn-index">Dropdown</button>
+        <div class="dropdown-content-index">
+          <a href="#">Link 1</a>
+          <a href="#">Link 2</a>
+          <a href="#">FAQ</a>
+        </div>
+    </div>
+
+    <div class="logo"></div>
+
+    <a class="menubutton" href="locations">Maps</a>
+    
+    <a class="menubutton menubutton1" href="airports">Airports</a>
+
+    <a class="menubutton menubutton2" href="airports">Renting</a>
+        
+    </div>
+        <div class="content-container">
+            <div class="news">
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+                loremipsumloremipsumloremipsum
+            </div>
+            
+            <form class="form-register" method="POST" onsubmit="return validateForm();">
+                <label for="name">Name:</label><br>
+                <input class="input-register" type="text" id="name" name="name" required><br><br>
+
+                <label for="gender">Gender:</label><br>
+                <input class="input-register" type="text" id="gender" name="gender" required><br><br>
+
+                <label for="birth_date">Birth Date:</label><br>
+                <input class="input-register" type="date" id="birth_date" name="birth_date" required><br><br>
+
+
+                <label for="cpf">CPF:</label><br>
+                <input class="input-register" type="text" id="cpf" name="cpf" required><br>
+                <!-- Display error message for CPF -->
+                {% if error_message %}
+                    <span style="color: red;">{{ error_message }}</span><br><br>
+                {% endif %}
+
+                <!-- Display success message -->
+                {% if success_message %}
+                    <p style="color:green;">{{ success_message }}</p>
+                {% endif %}
+
+                <label for="phone_number">Phone NUmber:</label><br>
+                <input class="input-register" type="text" id="phone_number" name="phone_number" required><br><br>
+
+                <label for="email">Email:</label><br>
+                <input class="input-register" type="text" id="email" name="email" required><br><br>
+
+                <label for="car_model">Car Model:</label><br>
+                <input class="input-register" type="text" id="car_model" name="car_model" required><br><br>
+
+                <input type="submit" value="Register" class="registerbtn">
+            </form>
+
+            <div class="news">
+
+            </div>
+        </div>
+    
+    <div id="main-footer">
+        <div id="footer1">
+            <p id="footerhead">Car Rental</p>
+            <ul>
+                <li>Services</li>
+                <li>Models</li>
+                <li>Cities</li>
+                <li>Map</li>
+                <li>Airports</li>
+                <li>Loremips</li>
+            </ul>
+        </div>
+
+        <div id="footer2">
+            <p id="footerhead">About Us</p>
+            <ul>
+                <li>The car stop</li>
+                <li>Privacy policy</li>
+                <li>Cookies policy</li>
+                <li>Terms and conditions</li>
+                <li>Code of conduct</li>
+                <li>Work with us</li>
+            </ul>
+        </div>
+
+        <div id="footer3">
+            <p id="footerhead">Client</p>
+            <ul>
+                <li>Login</li>
+                <li>FAQ</li>
+                <li>Help</li>
+                <li>Contact</li>
+                <li>Requirements</li>
+                <li>Check our products</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer4">
+        <div style="padding-left: 50px;">
+            <p id="footerhead2">Payment</p>
+            <ul style="padding-left: 0;">
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+            </ul>
+        </div>
+    </div>
+    </body>
+</html>
+

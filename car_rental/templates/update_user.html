@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+
+    <div class="headerimage">
+
+    </div>
+
+    <div class="content-container">
+
+                <div class="divider" 
+                    style="text-align: center; font-size: 25px; color: darkgoldenrod;
+                            padding-top: 3px; text-decoration: underline; font-weight:bold;">
+                    
+                    Update user
+                </div>
+
+                <div class="news">
+                    adadadadadadaddda
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadaadadadadaadadadadada
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadaadadadadaadadadadada
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadaadadadadaadadadadada
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadaadadadadaadadadadada
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadaadadadadaadadadadada
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadaadadadadaadadadadada
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadaadadadadaadadadadada
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadaadadadadaadadadadada
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadaadadadadaadadadadada
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadadadadadadddaadadadad
+                    adadaadadadadaad
+                </div>
+
+                <div>
+                    <form class="form-register" method="POST" action="/update_user/{{ user.cpf }}">
+                        Name <br><input type="text" name="name" value="{{ user.name }}"><br><br>
+                        Gender <br> <input type="text" name="gender" value="{{ user.gender }}"><br><br>
+                        CPF <br> <input type="text" name="cpf" value="{{ user.cpf }}"><br><br>
+                        Birth Date <br> <input type="text" name="birth_date" value="{{ user.birth_date }}"><br><br>
+                        Email <br> <input type="text" name="email" value="{{ user.email }}"><br><br>
+                        Phone Number <br> <input type="text" name="phone_number" value="{{ user.phone_number }}"><br><br>
+                        Car Model <br> <input type="text" name="car_model" value="{{ user.car_model }}"><br><br>
+                        <input type="submit" value="Update" class="registerbtn">
+                    </form>
+                </div>
+
+                <div class="news"></div>
+
+    </div>
+
+    <div id="main-footer">
+        <div id="footer1">
+            <p id="footerhead">Car Rental</p>
+            <ul>
+                <li>Services</li>
+                <li>Models</li>
+                <li>Cities</li>
+                <li>Map</li>
+                <li>Airports</li>
+                <li>Loremips</li>
+            </ul>
+        </div>
+
+        <div id="footer2">
+            <p id="footerhead">About Us</p>
+            <ul>
+                <li>The car stop</li>
+                <li>Privacy policy</li>
+                <li>Cookies policy</li>
+                <li>Terms and conditions</li>
+                <li>Code of conduct</li>
+                <li>Work with us</li>
+            </ul>
+        </div>
+
+        <div id="footer3">
+            <p id="footerhead">Client</p>
+            <ul>
+                <li>Login</li>
+                <li>FAQ</li>
+                <li>Help</li>
+                <li>Contact</li>
+                <li>Requirements</li>
+                <li>Check our products</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer4">
+        <div style="padding-left: 50px;">
+            <p id="footerhead2">Payment</p>
+            <ul style="padding-left: 0;">
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+            </ul>
+        </div>
+    </div>
+    
+</body>

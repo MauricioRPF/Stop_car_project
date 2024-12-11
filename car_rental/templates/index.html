@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Rental Registration</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+
+    <div class="indexbody">
+        
+        <div class="indexcall">
+            <p> Search. Compare. Rent. </p>
+        </div>
+            
+        <div id="menuindex">
+            <a id="login" href="Login">Login</a>
+
+            <a id="login" href="{{ url_for('register') }}">Register</a>
+        </div>
+        
+        <div class="dropdown-index">
+            <button class="dropbtn-index">Dropdown</button>
+            <div class="dropdown-content-index">
+              <a href="{{ url_for('consult') }}">Link 1</a>
+              <a href="#">Link 2</a>
+              <a href="#">FAQ</a>
+            </div>
+        </div>
+
+        <div class="logo"></div>
+
+        <a class="menubutton" href="locations">Maps</a>
+        
+        <a class="menubutton menubutton1" href="airports">Airports</a>
+
+        <a class="menubutton menubutton2" href="airports">Renting</a>
+
+        <div id="index-table-ct1">
+            <p style="font-weight: 800;padding-left: 10px;font-size: 18px;">Partners</p>
+            <p style="padding-left: 10px;margin-top: -14px;line-height: 1.3;"> More than 12 brands <br> <b>Ready </b>at your disposal</p>
+            <a class="car-models" href="car_models">Car models</a>
+        </div>
+    </div>
+
+    <div id="main-footer">
+        <div id="footer1">
+            <p id="footerhead">Car Rental</p>
+            <ul>
+                <li>Services</li>
+                <li>Models</li>
+                <li>Cities</li>
+                <li>Map</li>
+                <li>Airports</li>
+                <li>Loremips</li>
+            </ul>
+        </div>
+
+        <div id="footer2">
+            <p id="footerhead">About Us</p>
+            <ul>
+                <li>The car stop</li>
+                <li>Privacy policy</li>
+                <li>Cookies policy</li>
+                <li>Terms and conditions</li>
+                <li>Code of conduct</li>
+                <li>Work with us</li>
+            </ul>
+        </div>
+
+        <div id="footer3">
+            <p id="footerhead">Client</p>
+            <ul>
+                <li>Login</li>
+                <li>FAQ</li>
+                <li>Help</li>
+                <li>Contact</li>
+                <li>Requirements</li>
+                <li>Check our products</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="footer4">
+        <div style="padding-left: 50px;">
+            <p id="footerhead2">Payment</p>
+            <ul style="padding-left: 0;">
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+                <li>LoremipsumLoremipsumLoremipsumLoremipsumLoremipsum</li>
+            </ul>
+        </div>
+    </div>
+</body>

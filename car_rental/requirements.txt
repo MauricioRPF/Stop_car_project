@@ -1,0 +1,4 @@
+Flask
+Peewee
+psycopg2-binary
+Flask-SQLAlchemy

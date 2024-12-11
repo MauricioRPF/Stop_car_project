@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Styled Table</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <!--<link rel="stylesheet" href="../static/style.css">-->
+</head>
+<body>
+    <div class="table-body">
+        <div class="table-container">
+            <h1 class="table-header">Consult Data</h1>
+            
+            <table class="styled-table">
+                <tr>
+                    <!-- Dynamically set the column header -->
+                    {% if display_column == 'name' %}
+                        <th>Name</th>
+                    {% elif display_column == 'gender' %}
+                        <th>Gender</th>
+                    {% elif display_column == 'cpf' %}
+                        <th>CPF</th>
+                    {% elif display_column == 'birth_date' %}
+                        <th>Birth Date</th>
+                    {% elif display_column == 'email' %}
+                        <th>Email</th>
+                    {% elif display_column == 'phone_number' %}
+                        <th>Phone Number</th>
+                    {% elif display_column == 'car_model' %}
+                        <th>Car Model</th>
+                    {% elif display_column == 'geral' %}
+                        <th>Name</th>
+                        <th>Gender</th>
+                        <th>CPF</th>
+                        <th>Birht Date</th>
+                        <th>Email</th>
+                        <th>Phone Number</th>
+                        <th>Car Model</th>
+                        <th>Actions</th>
+                    {% endif %}
+                </tr>
+                
+                <!-- Loop through users and dynamically display the selected column -->
+                {% for user in users %}
+                <tr>
+                    {% if display_column == 'name' %}
+                        <td>{{ user.name }}</td>
+                    {% elif display_column == 'gender' %}
+                        <td>{{ user.gender }}</td>
+                    {% elif display_column == 'cpf' %}
+                        <td>{{ user.cpf }}</td>
+                    {% elif display_column == 'birth_date' %}
+                        <td>{{ user.birth_date }}</td>
+                    {% elif display_column == 'phone_number' %}
+                        <td>{{ user.phone_number }}</td>
+                    {% elif display_column == 'email' %}
+                        <td>{{ user.email }}</td>
+                    {% elif display_column == 'car_model' %}
+                        <td>{{ user.car_model }}</td>
+                    {% elif display_column == 'geral' %}
+                        <td>{{ user.name }}</td>
+                        <td>{{ user.gender }}</td>
+                        <td>{{ user.cpf }}</td>
+                        <td>{{ user.birth_date }}</td>
+                        <td>{{ user.email }}</td>
+                        <td>{{ user.phone_number }}</td>
+                        <td>{{ user.car_model }}</td> 
+                        <td>
+                            <div class="button-container">
+                                <form method="POST" action="/delete_user/{{ user.cpf }}">
+                                    <input type="submit" value="Delete" class="delete-button">
+                                </form>
+                                <a class="update-button" href="/update_user/{{ user.cpf }}">Update</a>
+                            </div>    
+                        </td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+               </table>
+        </div>       
+    </div>
+        <a class="update-button back-to-main-btn" href="{{ url_for('index') }}"> Back to main</a>
+</body>
+</html>

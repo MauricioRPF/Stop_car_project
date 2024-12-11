@@ -1,0 +1,548 @@
+body {
+    font-family: Arial, sans-serif; 
+    margin: 0;
+    padding: 0;
+    background-color: #161616;
+}
+
+.logo{
+    position: absolute;
+    left: 200px;
+    top: 3.4%;
+    width: 70px;
+    height: 34px;
+    background-image: url(../static/Screenshot\ from\ 2024-10-21\ 10-42-44.png);
+    background-size: cover;
+    background-position: center;
+
+}
+
+.menubutton{
+
+    position: absolute;
+    background-color:#c4980a; 
+    color:#000000; 
+    border: none; 
+    border-radius: 2px; 
+    font-size: 20px; 
+    font-weight: bold; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out;
+    top: 3.3%;
+    left: 300px;
+    width: 100px;
+    padding: 5px;
+    border: 2px solid black;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.menubutton:hover{
+    background: #000000;
+    color: #c4980a;
+    border: 2px solid #c4980a;
+}
+
+.menubutton1{
+    left: 415px;
+}
+
+.menubutton2{
+    left: 530px;
+}
+
+.box-1{
+    height: 400px;
+    width: 100%;
+}
+
+.headerimage{
+    width: 100%; 
+    height: 300px; 
+    background-image: url(./bugatti_w16_mistral_2024_car_4k_hd_cars-3840x2160.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+} 
+
+.divider{
+    position: absolute;
+    height: 35px;
+    width: 100%;
+    background: #1c1d1c;
+}
+
+/*1-----------*/
+
+.dropbtn-index {
+    background-color: #050505;
+    color: #c4980a;
+    padding: 8px;
+    font-size: 22px;
+    border: 2px solid;
+    cursor: pointer;
+    width: 150px;
+    text-align: left;
+  }
+  
+
+  .dropdown-index {
+    position: absolute;
+    display: inline-block;
+    top: 11%;
+    left: 2.3%;
+  }
+  
+
+  .dropdown-content-index {
+    display: none;
+    position: absolute;
+    text-align: left;
+    background-color: rgb(46, 46, 46);
+    min-width: 150px;
+    z-index: 1;
+  }
+  
+  
+  .dropdown-content-index a {
+    color: #c4980a;
+    padding: 12px 16px;
+    font-weight: 700;
+    text-decoration: none;
+    display: block;
+  }
+  
+  
+  .dropdown-content-index a:hover {background-color: #464646}
+  
+  
+  .dropdown-index:hover .dropdown-content-index {
+    display: block;
+  }
+
+/*2----------*/
+
+
+/*1-------FAQ------*/
+
+.faq-container{
+    position: absolute;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: aqua;
+    width: 830px;
+    height: 400px;
+    top: 25%;
+    left: 16.9%;
+}
+
+.faq-content{
+    margin-top: 5%;
+    width: 150px;
+    height: 310px;
+    background-color: violet;
+}
+
+/*2----------------*/
+
+#dropdownmenu{
+    position: absolute;
+    display: flex;
+    background:#1c1d1c;
+    width: 100%;
+    height: 27px;
+    padding-top: 10px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block; 
+    
+}
+
+#dropbtn1, #dropbtn2, #dropbtn3 {
+    background-color: rgb(28, 29, 28);
+    color: rgb(255, 179, 39);
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px; 
+    cursor: pointer; 
+    text-decoration: none; 
+}
+
+#dropbtn3{
+    padding-right: 45px;
+}
+
+
+.dropdown-content {
+    display: none; 
+    position: absolute; 
+    background-color: #1c1d1c; 
+    min-width: 100px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+    z-index: 1; 
+    top: 65%;
+}
+
+.dropdown-content a {
+    color: rgb(255, 179, 39); 
+    padding: 10px 20px; 
+    text-decoration: none; 
+    display: block; 
+}
+
+.dropdown-content a:hover {
+    background-color: #313131; 
+}
+
+.dropdown:hover .dropdown-content {
+    display: block; 
+}
+
+.content-container{
+    margin-top: px;
+    display: flex;
+    justify-content:space-between;
+    z-index: 0;
+}
+
+.news{
+    background-color: rgb(103, 103, 110);
+    height: 800px;
+    width: 260px;
+}
+
+.form-register{ 
+    margin-top: 50px;
+    width: 300px;
+    padding: 16px;
+    color: #c4980a;
+    background-color: rgba(0, 0, 0, 0.938);
+    border-radius: 10px;
+    border: 2px solid #c4980a;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.input-register[type='text'],[type='date']{
+    width :90%;
+    padding :10px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border:hsl(from color h s l);
+    background: rgb(184, 184, 184);
+    border-radius: 7px;
+    font-size: 15px;
+}
+
+.input-register[type='date']{
+    text-align: center;
+}
+
+.registerbtn{
+  
+    background-color: #c4980a;
+    padding: 10px;
+    color: black;
+    border:2px solid black;
+    cursor: pointer;
+    width: 150px;
+    margin: 20px;
+    border-radius: 7px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: large;
+    justify-content: center;
+    transition: 0.3s ease-in-out;
+}
+
+.registerbtn:hover{
+    color: #c4980a;
+    background-color:black;
+    border-radius: 7px;
+    border: 2px solid #c4980a;
+    transition: 0.3s ease-in-out;
+}
+
+#main-footer{
+    display: flex;
+	height:235px;
+	background:#777776;
+	border-top:#c4980a 2px solid;
+	margin:0;
+	padding:0;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+#footerhead{
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.774);
+    padding-left: 40px;
+    margin-bottom: -10px;
+}
+
+#footerhead2{
+    font-size: 22px;
+    font-weight: 700;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.774);
+    margin-bottom: -10px;
+}
+
+#footer1, #footer2, #footer3{
+    width: 210px;
+    height: 230px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .6);
+    line-height: 26px;
+}
+
+#footer4{
+    margin-top: -22px;
+    height: 150px;
+    background-color: #777776;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgba(0, 0, 0, .6);
+    line-height: 23px;
+    
+}
+ul{
+    list-style-type: none;
+}
+
+.indexbody{
+    width: 100%; 
+    height: 800px; 
+    background-image: url(./bugatti_w16_mistral_2024_car_4k_hd_cars-3840x2160.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;
+}
+
+.indexcall{
+    position: absolute;
+    top: 32%;
+    left:27%;
+    width: 390px;
+    height: 120px;
+    font-size: 40px;
+    font-family:'Times New Roman', Times, serif ;
+    color: rgb(255, 255, 255);
+}
+
+#menuindex{
+    position: absolute;
+    top: 3%;
+    left: 2%;
+    display: flex;
+}
+
+#login, #register {
+    font-size: 20px;
+    background-color: rgb(187, 187, 187);
+    transition: 0.3s ease-in-out;
+    text-decoration: none;
+    padding: 5px;
+    border: 2px solid black;
+    color: #000000;
+}
+
+#login:hover, #register:hover{
+    background-color: #000000;
+    color: #c4980a;
+    border: 2px solid rgb(196, 152, 10);
+    transition: 0.3s ease-in-out;
+}
+
+
+#index-table-ct1{
+    position: absolute;
+    background: #000000;
+    border-radius: 5%;
+    border: 2px solid#c4980a;
+    top: 36%;
+    right: 3%;
+    height: 140px;
+    width: 200px;
+    color:#c4980a;
+}
+
+.car-models{
+    position: absolute;
+    background-color: #000000; 
+    color:#c4980a; 
+    border: none; 
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 16px; 
+    font-weight: bold;
+    cursor: pointer; 
+    transition: background-color 0.3s ease-in-out;
+    bottom: 5%;
+    left: 40px;
+    border: 2px solid #c4980a;
+    
+}
+
+.car-models:hover{
+    background-color: #c4980a;
+    color: #000000;
+    transition: background-color 0.3s ease-in-out;
+}
+
+/*------------------------------ Página de consulta --------------------------*/
+
+.table-body {
+    width: 90%;
+    margin: 20px auto;
+    overflow-x: auto; 
+}
+
+.table-container {
+    background-color: rgb(0, 0, 0);
+    color: #c4980a;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    max-width: 100%; 
+    overflow: hidden; 
+}
+
+.table-header {
+    text-align:center;
+    margin-bottom: 20px;
+}
+
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    border-radius: 8px;
+    overflow: hidden;
+    table-layout: fixed;
+}
+
+.styled-table th, .styled-table td {
+    padding: 12px 15px;
+    text-align: left;
+    word-wrap: break-word; 
+}
+
+.styled-table thead tr {
+    background-color: #000000;
+    color: #c4980a;
+    border: 2px solid #c4980a;
+    border-radius: 2px;
+    text-align: left;
+    font-weight: bold;
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+    background-color: #353535;
+}
+
+.styled-table tbody tr.active-row {
+    font-weight: bold;
+    color: #c4980a;
+}
+
+.styled-table tbody tr{
+    border-left: 2px solid #c4980a;
+    border-right: 2px solid #c4980a;
+    
+}
+
+.styled-table tbody tr:first-of-type{
+    border-top: 2px solid #c4980a;
+    border-bottom: 2px solid #c4980a;
+}
+
+.styled-table tbody tr:last-of-type{
+    border-bottom: 2px solid #c4980a;
+}
+
+.styled-table tbody td {
+    text-align: left;
+}
+
+.styled-table tbody td form {
+    display: block; 
+    margin: 0; 
+}
+
+.styled-table tbody td a {
+    display: inline-block; 
+    margin: 0; 
+    text-align: center; 
+}
+
+.styled-table tbody td a:hover {
+    text-decoration: underline;
+}
+
+.update-button {
+    width: auto; 
+    padding: 5px 10px; 
+    text-align: center;
+    color: black;
+    background: #c4980a;
+    font-size: 18px;
+    border: 2px solid #000000;
+    border-radius: 5%;
+    
+}
+
+.delete-button{
+    width: auto; 
+    padding: 5px 10px; 
+    text-align: center;
+    color: black;
+    background: #c4980a;
+    font-size: 18px;
+    border: 2px solid black;
+    border-radius: 5%;
+    text-decoration: underline;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.delete-button:hover {
+    background: #000000;
+    color: #c4980a;
+    border: 2px solid #c4980a;
+    text-decoration: underline;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.update-button:hover {
+    background: #000000;
+    color: #c4980a;
+    border: 2px solid #c4980a;
+    text-decoration: underline;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.button-container {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    gap: 2px; 
+}
+
+.back-to-main-btn{
+    position:absolute;
+    left: 45%;
+
+}
